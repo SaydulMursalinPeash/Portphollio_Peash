@@ -52,7 +52,7 @@ body{
     right: 400px;
 }
 .side-bar{
-    background: linear-gradient(to bottom right,rgba(255, 255, 255, 0.251),transparent);
+    background: linear-gradient(to bottom right,rgba(255, 255, 255, 0.625),transparent);
     border-radius: 5px;
     display: grid;
     grid-gap: 3px;
@@ -60,10 +60,7 @@ body{
 
     backdrop-filter: (5px);
 }
-.side-bar div{
 
-    border-radius: 5px;
-}
 .me{
     position: relative;
     height: 100%;
@@ -78,6 +75,8 @@ body{
     position: relative;
     height: 70%;
     width: 50%;
+    overflow: hidden;
+    border-radius: 75px;
 
 }
 .myphoto{
@@ -88,13 +87,13 @@ body{
     bottom:0;
 }
 .photoback{
-    position: absolute;
-    width: 150px;
+    position:absolute;
     height: 150px;
-    bottom:0;z-index: -1;
-    background: linear-gradient(to right bottom, red,yellow);
+    width: 150px;
+    bottom: 0;
+    background:linear-gradient(to bottom right,rgb(245, 138, 138),rgb(251, 251, 126));
+    border-radius: 75px;
 }
-
 @media only screen and (max-width:850px){
     .container{
         width: 98vw;
