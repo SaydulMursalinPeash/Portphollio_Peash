@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@900&display=swap');
 
 
 *{
@@ -155,5 +155,37 @@ body{
 @media only screen and (max-width:850px){
     .container{
         width: 98vw;
+    }
+}
+@media only screen and (max-width:600px){
+
+    .port-container{
+        grid-template-columns: auto 150px;
+    }
+    .photo{
+        height:150px;
+        width: 100px;
+    }
+    .photoback{
+        height: 100px;
+        width: 100px;
+
+    }
+    .myphoto{
+        width: 100px;
+    }
+    .button{
+        width: 70px;
+        background-color: transparent;
+        overflow: hidden;
+    }
+    .button p{
+        font-size: 13px;
+    }
+    .button span{
+        width: 70px;
+    }
+    .name h2{
+        font-size: 15px;
     }
 }
