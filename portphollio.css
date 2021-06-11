@@ -20,7 +20,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: rgba(68, 246, 95, 0.49);
-    background-image: linear-gradient(to right top, #0707077b, #fafafa);
+    background-image: linear-gradient(to right top, #80f12f, #6cdbeb);
 }
 .container{
     height: 100vh;
@@ -58,7 +58,7 @@ body{
     right: 400px;
 }
 .side-bar{
-    background: linear-gradient(to bottom left,rgba(255, 255, 255, 0.36),transparent);
+    background: linear-gradient(to top left,rgba(255, 255, 255, 0.36),transparent);
     border-radius: 5px 30px 30px 5px;
     display: grid;
     grid-gap: 3px;
@@ -74,7 +74,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
 }
 .photo{
     position: relative;
@@ -107,8 +107,11 @@ body{
 
 .main{
     border-radius: 30px 5px 5px 30px;
-    backdrop-filter: blur(5px);
-    background-color: black;
+    display: flex;
+    flex-direction: column-reverse;
+
+    background-color: transparent;
+
 
 }
 .buttons{
@@ -116,7 +119,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 8px;
+    padding-bottom: 5px;
 
 
 }
@@ -127,7 +130,7 @@ body{
     clip-path: circle(0% at 1% 1%);
     background-color: rgba(246, 237, 237, 0.428);
 
-    border-radius: 3px 3px 0px 0px;
+    border-radius: 0px 0px 3px 3px;
 }
 .name{
     background-color: #00000021;
@@ -152,8 +155,7 @@ body{
 
     margin-left:5px;
     margin-right: 5px;
-    border-radius: 3px;
-    border-radius: 3px 3px 0px 0px;
+    border-radius: 0px 0px 3px 3px;
 }
 
 .button:hover span{
@@ -161,7 +163,7 @@ body{
     transition: all 0.5s;
 }
 .button:hover p{
-    color: rgb(35, 107, 250);
+    color: rgb(237, 239, 241);
 }
 .button p{
     color: rgba(90, 90, 90, 0.897);
@@ -172,11 +174,11 @@ body{
 
 }
 .button.active p{
-    color: #fff;
+    color: rgb(3, 2, 2);
 }
 
 .contents{
-    border-radius: 50px 5px 5px 30px;
+    border-radius: 30px 5px 5px 30px;
     display: flex;
     align-items: center;
     position: relative;
@@ -190,16 +192,19 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #5c5c5d34;
+    
     padding: 20px;
     clip-path: circle(0% at 50% 0);
+    backdrop-filter: blur(3px);
+    border-radius: 30px 5px 5px 30px;
 }
 .button.active span{
-    background-color: #2627267d;
+    background-color: transparent;
     clip-path: circle(139.4% at 1% 1%);
 }
 .button.active{
     border-bottom: none;
+    backdrop-filter: blur(5px);
 }
 .content.active{
     clip-path: circle(150.0% at 50% 0);
@@ -239,4 +244,7 @@ body{
 }
 .social div:active{
     border-radius: 50%;
+}
+.name h2{
+    color: #1a57f0;
 }

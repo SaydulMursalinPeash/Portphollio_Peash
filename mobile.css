@@ -99,6 +99,9 @@
 
 
     }
+    .content{
+        background-color: #5c5c5d34;
+    }
 
     body{
         background: none;
@@ -123,6 +126,7 @@
         bottom: 0;
         overflow: hidden;
         height: 80%;
+        flex-direction: column;
         
         width: 100vW;
         background-color: black;
