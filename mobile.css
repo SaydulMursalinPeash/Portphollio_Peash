@@ -22,12 +22,12 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 25.5%;
+        height: 100vh;
         width: 100vW;
         z-index: -1;
         border-radius: 0px;
         background: none;
-        background-color: rgba(255, 255, 255, 0.857);
+        background-color: rgba(0, 0, 0, 0.136);
 
 
     }
@@ -40,12 +40,25 @@
     }
     .social{
         position: absolute;
-        bottom: 40px;
-        left: 40vw;
+        flex-direction: column;
+        top: 20px;
+    }
+    .social div{
+        background-color: rgba(0, 0, 0, 0.224);
+        height: 25px;
+        width: 25px;
+        border-radius: 10px;
+    }
+    .social div i{
+        font-size: 13px;
+    }
+    .social div:hover i{
+        font-size: 16px;
     }
     .content{
         border-radius: 30px 30px 0px 0px;
-        background-color: brown;
+        color: transparent;
+
     }
     .photo{
         width: 100px;
@@ -104,11 +117,11 @@
         height: 80vh;
         
         width: 100vW;
-        background: linear-gradient(to bottom right,rgb(85, 69, 250),transparent);
+        background-color: black;
         border-radius: 30px 30px 0px 0px;
     }
     .buttons{
-        background-color: rgba(43, 226, 58, 0.183);
+
         height: 40px;
         padding-left: 15px;
         padding-right: 15px;
@@ -120,12 +133,21 @@
         overflow: hidden;
         border-radius: 3px;
     }
-    .button nav{
+    .button span{
         height: 100%;
         border-radius: 3px;
     }
     .button p{
-        color: rgb(245, 228, 76);
+        color: rgb(71, 123, 255);
         font-size: 13px;
+    }
+    .button:hover p{
+        color: black;
+    }
+    .button.active span{
+        background-color: rgba(165, 42, 42, 0.387);
+    }
+    .button.active p{
+        color: beige;
     }
 }
