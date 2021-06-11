@@ -165,3 +165,16 @@
         color: beige;
     }
 }
+@media only screen and (max-width:400px){
+    .photo{
+        width: 70px;
+        height: 90px;
+    }
+    .myphoto{
+        border-radius: 0px 0px 35px 35px;
+    }
+    .photoback{
+        height: 70px;
+        width: 70px;
+    }
+}
