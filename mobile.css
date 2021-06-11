@@ -137,6 +137,7 @@
         border-radius: 3px;
         margin-left: 0px;
         margin-right: 0px;
+        border-radius: 3px 3px 0px 0px;
         
     }
     .button span{
