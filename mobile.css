@@ -45,12 +45,13 @@
     }
     .name{
         position: relative;
-        height: 100%;
+        height: 150px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin-right: 20px;
+
 
     }
     .myphoto{
@@ -63,17 +64,21 @@
         width: 100px;
     }
     .name h2{
-        color: brown;
+        color: rgb(61, 30, 236);
+        font-size: 18px;
+
+
     }
+
     .name h2:nth-child(2){
-        color: crimson;
+        color: rgb(243, 253, 43);
     }
     body{
         background: none;
         overflow: hidden;
         padding: 0;
         margin: 0;
-        background-color: blue;
+
         display: flex;
         overflow-y: unset;
         height: 100vh;
@@ -96,8 +101,10 @@
     }
     .buttons{
         background-color: rgba(43, 226, 58, 0.183);
+        height: 5%;
     }
     .button p{
         color: azure;
+        font-size: 13px;
     }
 }
