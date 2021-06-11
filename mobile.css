@@ -91,6 +91,7 @@
     .photoback{
         height: 80px;
         width: 80px;
+        background:linear-gradient(to bottom right,rgb(69, 69, 69),transparent);
     }
     .name h2{
         color: rgb(101, 101, 101);

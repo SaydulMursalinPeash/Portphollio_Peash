@@ -20,7 +20,7 @@ body{
     align-items: center;
     justify-content: center;
     background-color: rgba(68, 246, 95, 0.49);
-    background-image: linear-gradient(to right top, #80f12f, #6cdbeb);
+    background-image: linear-gradient(to right top, #0707077b, #fafafa);
 }
 .container{
     height: 100vh;
@@ -34,7 +34,7 @@ body{
     height: 98%;
     width: 850px;
     overflow: hidden;
-    border-radius: 50px 50px 50px 50px;
+    border-radius: 30px 30px 30px 30px;
     z-index: 0;
     padding: 5px;
     grid-gap: 3px;
@@ -59,7 +59,7 @@ body{
 }
 .side-bar{
     background: linear-gradient(to bottom left,rgba(255, 255, 255, 0.36),transparent);
-    border-radius: 5px 50px 50px 5px;
+    border-radius: 5px 30px 30px 5px;
     display: grid;
     grid-gap: 3px;
     grid-template-rows: 1fr 1fr;
@@ -106,26 +106,28 @@ body{
 }
 
 .main{
-    border-radius: 50px 5px 5px 50px;
+    border-radius: 30px 5px 5px 30px;
     backdrop-filter: blur(5px);
+    background-color: black;
 
 }
 .buttons{
-    height: 10%;
+    height: 5%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 8px;
 
 
 }
 .button span{
     position: absolute;
-    height: 30px;
+    height: 100%;
     width: 70px;
     clip-path: circle(0% at 1% 1%);
-    background-color: rgba(255, 255, 255, 0.428);
+    background-color: rgba(246, 237, 237, 0.428);
 
-    border-radius: 3px;
+    border-radius: 3px 3px 0px 0px;
 }
 .name{
     background-color: #00000021;
@@ -146,10 +148,12 @@ body{
     align-items: center;
     justify-content: center;
     width: 70px;
+    height: 100%;
 
-    margin-left:10px;
-    margin-right: 10px;
+    margin-left:5px;
+    margin-right: 5px;
     border-radius: 3px;
+    border-radius: 3px 3px 0px 0px;
 }
 
 .button:hover span{
@@ -160,27 +164,25 @@ body{
     color: rgb(35, 107, 250);
 }
 .button p{
-    color: rgba(22, 102, 172, 0.897);
+    color: rgba(90, 90, 90, 0.897);
     font-family: 'Changa', sans-serif;
-
+    font-size: 14px;
+    
     z-index: 2;
 
 }
-.main{
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    
-
+.button.active p{
+    color: #fff;
 }
+
 .contents{
-    border-radius: 50px 5px 5px 50px;
+    border-radius: 50px 5px 5px 30px;
     display: flex;
     align-items: center;
     position: relative;
     justify-content: center;
     overflow: hidden;
-    height: 90%;
+    height: 95%;
 
 }
 .content{
@@ -193,7 +195,7 @@ body{
     clip-path: circle(0% at 50% 0);
 }
 .button.active span{
-    background-color: #bcff8c92;
+    background-color: #2627267d;
     clip-path: circle(139.4% at 1% 1%);
 }
 .button.active{
