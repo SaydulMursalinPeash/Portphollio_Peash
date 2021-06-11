@@ -36,7 +36,7 @@
     .me{
         position: relative;
         display: flex;
-        height: 19%;
+        height:18%;
         padding: 0;
         align-items: center;
         margin: 0;
@@ -68,7 +68,7 @@
     }
     .photo{
         width: 80px;
-        height: 100px;
+        height: 120px;
         margin:0;
 
     }
@@ -121,7 +121,7 @@
         position: absolute;
         bottom: 0;
         overflow: hidden;
-        height: 81%;
+        height: 82%;
         
         width: 100vW;
         background-color: black;
@@ -168,7 +168,7 @@
 @media only screen and (max-width:400px){
     .photo{
         width: 70px;
-        height: 90px;
+        height:100px;
     }
     .myphoto{
         border-radius: 0px 0px 35px 35px;
