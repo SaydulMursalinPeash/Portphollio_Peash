@@ -101,7 +101,15 @@
     }
     .buttons{
         background-color: rgba(43, 226, 58, 0.183);
-        height: 5%;
+        height: 40px;
+        border-radius:0px 0px 30px 30px ;
+    }
+    .button{
+        position: relative;
+        height: 100%;
+    }
+    .button nav{
+        height: 100%;
     }
     .button p{
         color: azure;
