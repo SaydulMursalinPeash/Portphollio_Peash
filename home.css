@@ -22,3 +22,8 @@
     font-family: 'Josefin Sans', sans-serif;
 
 }
+@media only screen and (max-width:600px){
+    .greetings p{
+        color: #fff;
+    }
+}
