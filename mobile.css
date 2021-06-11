@@ -27,7 +27,7 @@
         z-index: -1;
         border-radius: 0px;
         background: none;
-        background-color: rgba(0, 0, 0, 0.136);
+        background: linear-gradient(to left top,rgb(142, 137, 137),white);
 
 
     }
