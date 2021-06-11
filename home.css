@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+
+
+.greetings{
+    margin-left: 50px;
+    margin-top: 100px;
+
+}
+.greetings h1{
+    font-family: 'Josefin Sans', sans-serif;
+    color: red;
+    
+}
+.greetings p{
+    margin-top: 10px;
+    text-align: justify;
+    width: 400px;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
