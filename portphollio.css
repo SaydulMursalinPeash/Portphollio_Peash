@@ -4,8 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Changa&family=Righteous&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
 
 
@@ -44,14 +44,7 @@ body{
     backdrop-filter: blur(5px);
     background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.272), rgba(255, 255, 255, 0.218));
 }
-.dot1,.dot2{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: rgb(255, 255, 255);position: absolute;
-    z-index: -1;
-    
-}
+
 .dot1{
     position: absolute;
     top: 100px;
@@ -107,25 +100,22 @@ body{
     border-radius: 75px;
 }
 .name h2{
-    font-family: 'Righteous', cursive;
-    color: rgba(59, 141, 255, 0.945);
+    font-family: 'Carter One', cursive;
+    color: #f33f3fea;
+    font-size: 20px;
 }
-.name h2:nth-child(2){
-    color: rgb(144, 6, 250);
-    position: relative;
-    width: 100%;
-    text-align: center;
-}
+
 .main{
     border-radius: 50px 5px 5px 50px;
     backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.353);
+
 }
 .buttons{
     height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 
 }
 .button span{
@@ -136,6 +126,18 @@ body{
     background-color: rgba(255, 255, 255, 0.428);
 
     border-radius: 3px;
+}
+.name{
+    background-color: #00000021;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding:5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .button{
     position: relative;
@@ -186,6 +188,7 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
+    background-color: #5c5c5d34;
     padding: 20px;
     clip-path: circle(0% at 50% 0);
 }
@@ -200,4 +203,38 @@ body{
     clip-path: circle(150.0% at 50% 0);
     transition: all 0.5s;
 
+}
+.social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.facebook,.twitter,.linkedin{
+    position: relative;
+    height: 35px;
+    width: 35px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(240, 248, 255, 0.734);
+    margin: 5px;
+}
+.facebook,.twitter,.linkedin i{
+    font-size: 17px;
+}
+.facebook:hover i{
+    color:#1a57f0;
+    font-size: 20px;
+}
+.twitter:hover i{
+    color:#1a8cf0;
+    font-size: 20px;
+}
+.linkedin:hover i{
+    color:#073ba4;
+    font-size: 20px;
+}
+.social div:active{
+    border-radius: 50%;
 }

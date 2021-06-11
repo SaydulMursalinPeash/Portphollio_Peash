@@ -22,12 +22,12 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 50vh;
+        height: 25.5%;
         width: 100vW;
         z-index: -1;
         border-radius: 0px;
         background: none;
-        background-color: rgba(0, 0, 0, 0.857);
+        background-color: rgba(255, 255, 255, 0.857);
 
 
     }
@@ -37,6 +37,15 @@
         padding: 0;
         align-items: unset;
         margin: 0;
+    }
+    .social{
+        position: absolute;
+        bottom: 40px;
+        left: 40vw;
+    }
+    .content{
+        border-radius: 30px 30px 0px 0px;
+        background-color: brown;
     }
     .photo{
         width: 100px;
@@ -51,6 +60,7 @@
         align-items: center;
         justify-content: center;
         margin-right: 20px;
+        background-color: transparent;
 
 
     }
@@ -64,15 +74,12 @@
         width: 100px;
     }
     .name h2{
-        color: rgb(61, 30, 236);
+        color: rgb(246, 74, 74);
         font-size: 18px;
 
 
     }
 
-    .name h2:nth-child(2){
-        color: rgb(243, 253, 43);
-    }
     body{
         background: none;
         overflow: hidden;
@@ -85,10 +92,11 @@
         width: 100vw;
 
     }
-    .dot1,.dot2{
-        position: absolute;
-        visibility: hidden;
+    .contents{
+        border-radius: 30px 30px 0px 0px;
+
     }
+
     .main{
         position: absolute;
         bottom: 0;
@@ -96,23 +104,28 @@
         height: 80vh;
         
         width: 100vW;
-        background-color: rgb(32, 115, 230);
+        background: linear-gradient(to bottom right,rgb(85, 69, 250),transparent);
         border-radius: 30px 30px 0px 0px;
     }
     .buttons{
         background-color: rgba(43, 226, 58, 0.183);
         height: 40px;
-        border-radius:0px 0px 30px 30px ;
+        padding-left: 15px;
+        padding-right: 15px;
+
     }
     .button{
         position: relative;
         height: 100%;
+        overflow: hidden;
+        border-radius: 3px;
     }
     .button nav{
         height: 100%;
+        border-radius: 3px;
     }
     .button p{
-        color: azure;
+        color: rgb(245, 228, 76);
         font-size: 13px;
     }
 }
