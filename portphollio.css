@@ -23,7 +23,7 @@ body{
     background-image: linear-gradient(to right top, #80f12f, #6cdbeb);
 }
 .container{
-    height: 100%;
+    height: 100vh;
     width: 900px;
     display: flex;
     align-items: center;
