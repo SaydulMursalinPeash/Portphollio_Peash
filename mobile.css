@@ -6,6 +6,7 @@
         height: 100vh;
         position: absolute;
         overflow: hidden;
+
     }
     .port-container{
         display: flex;
@@ -25,9 +26,9 @@
         height: 100vh;
         width: 100vW;
         z-index: -1;
-        border-radius: 0px;
+        border-radius: 0;
         background: none;
-        background: linear-gradient(to left top,rgb(142, 137, 137),white);
+        background-color: rgb(0, 0, 0);
 
 
     }
@@ -41,10 +42,10 @@
     .social{
         position: absolute;
         flex-direction: column;
-        top: 20px;
+        top: 5px;
     }
     .social div{
-        background-color: rgba(0, 0, 0, 0.224);
+        background-color: rgba(248, 241, 241, 0.524);
         height: 25px;
         width: 25px;
         border-radius: 10px;
@@ -61,33 +62,33 @@
 
     }
     .photo{
-        width: 100px;
-        height: 120px;
+        width: 80px;
+        height: 100px;
 
     }
     .name{
         position: relative;
-        height: 120px;
+        height: 60px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-right: 20px;
         background-color: transparent;
 
 
     }
     .myphoto{
         position: absolute;
-        width: 100px;
+        width: 80px;
+        border-radius: 0px 0px 40px 40px;
 
     }
     .photoback{
-        height: 100px;
-        width: 100px;
+        height: 80px;
+        width: 80px;
     }
     .name h2{
-        color: rgb(246, 74, 74);
+        color: rgb(101, 101, 101);
         font-size: 18px;
 
 
@@ -115,7 +116,7 @@
         position: absolute;
         bottom: 0;
         overflow: hidden;
-        height: 80vh;
+        height: 83vh;
         
         width: 100vW;
         background-color: black;
@@ -145,7 +146,7 @@
         border-radius: 3px;
     }
     .button p{
-        color: rgb(71, 123, 255);
+        color: rgb(84, 84, 84);
         font-size: 13px;
     }
     .button:hover p{
