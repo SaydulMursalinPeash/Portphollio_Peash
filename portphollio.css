@@ -7,7 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Righteous&display=swap');
 
 
 *{
@@ -20,10 +20,11 @@ body{
     align-items: center;
     justify-content: center;
     background-color: rgba(68, 246, 95, 0.49);
-    background-image: linear-gradient(to right top, #80f12f, #6cdbeb);
+    background-image: url("back7.jpg");
+    //background-image: linear-gradient(to right top, #80f12f, #6cdbeb);
 }
 .container{
-    height: 100vh;
+    height: 80vh;
     width: 900px;
     display: flex;
     align-items: center;
@@ -31,15 +32,15 @@ body{
     overflow: hidden;
 }
 .port-container{
-    height: 98%;
+    height: 100%;
     width: 850px;
     overflow: hidden;
     border-radius: 30px 30px 30px 30px;
     z-index: 0;
-    padding: 5px;
-    grid-gap: 3px;
+    //padding: 5px;
+    grid-gap: 0px;
     display: grid;
-    grid-template-columns: auto 250px;
+    grid-template-columns: 250px auto;
     grid-auto-rows: 1fr;
     backdrop-filter: blur(5px);
     background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.272), rgba(255, 255, 255, 0.218));
@@ -58,8 +59,8 @@ body{
     right: 400px;
 }
 .side-bar{
-    background: linear-gradient(to top left,rgba(255, 255, 255, 0.36),transparent);
-    border-radius: 5px 30px 30px 5px;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.36),transparent);
+    border-radius: 30px 5px 5px 30px;
     display: grid;
     grid-gap: 3px;
     grid-template-rows: 1fr 1fr;
@@ -74,39 +75,42 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 30px 5px 5px  5px;
+
     
 }
 .photo{
     position: relative;
-    height: 200px;
-    width: 150px;
+    height: 150px;
+    width: 120px;
     overflow: hidden;
     border-radius: 75px;
 
 }
 .myphoto{
     position: absolute;
-    width: 150px;
+    width: 120px;
     height: auto;
     border-radius: 0px 0px 75px 75px;
     bottom:0;
 }
 .photoback{
     position:absolute;
-    height: 150px;
-    width: 150px;
+    height: 120px;
+    width: 120px;
     bottom: 0;
-    background:linear-gradient(to bottom right,rgb(245, 138, 138),rgb(251, 251, 126));
+    background:linear-gradient(to bottom right,rgba(84, 84, 84, 0.585),rgba(255, 255, 255, 0));
     border-radius: 75px;
 }
 .name h2{
-    font-family: 'Carter One', cursive;
-    color: #f33f3fea;
-    font-size: 20px;
+    font-family: 'Righteous', cursive;
+    color: rgba(0, 0, 0, 0.469);
+    font-size: 18px;
+    letter-spacing: 5px;
 }
 
 .main{
-    border-radius: 30px 5px 5px 30px;
+    border-radius: 5px 30px 30px 5px;
     display: flex;
     flex-direction: column-reverse;
 
@@ -133,12 +137,12 @@ body{
     border-radius: 0px 0px 3px 3px;
 }
 .name{
-    background-color: #00000021;
+
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+
     border-radius: 5px;
     padding:5px;
     padding-left: 15px;
@@ -166,7 +170,7 @@ body{
     color: rgb(3, 70, 137);
 }
 .button p{
-    color: rgba(90, 90, 90, 0.897);
+    color: rgba(34, 33, 33, 0.897);
     font-family: 'Changa', sans-serif;
     font-size: 14px;
     
@@ -178,7 +182,7 @@ body{
 }
 
 .contents{
-    border-radius: 30px 5px 5px 30px;
+    border-radius: 5px 30px 30px 5px;
     display: flex;
     align-items: center;
     position: relative;
@@ -195,8 +199,9 @@ body{
     
     padding: 20px;
     clip-path: circle(0.4% at 50% 100%);
-    backdrop-filter: blur(3px);
-    border-radius: 30px 5px 5px 30px;
+
+    border-radius: 5px 30px 30px 5px;
+    background: linear-gradient(to left top,rgba(255, 255, 255, 0.36),transparent);
 }
 .button.active span{
     background-color: transparent;
@@ -224,7 +229,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(240, 248, 255, 0.734);
+    background-color: rgba(0, 0, 0, 0.17);
     margin: 5px;
 }
 .facebook,.twitter,.linkedin i{
@@ -244,7 +249,4 @@ body{
 }
 .social div:active{
     border-radius: 50%;
-}
-.name h2{
-    color: #1a57f0;
 }

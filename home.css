@@ -1,26 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
 
 
 .greetings{
-    margin-left: 50px;
+
     margin-top: 50px;
+    width: 80%;
+
 
 }
 .greetings h1{
     font-family: 'Josefin Sans', sans-serif;
-    color: rgba(255, 66, 66, 0.891);
+    color: rgba(54, 146, 238, 0.891);
     font-size:30px;
 
     
 }
 .greetings p{
-    margin-top: 10px;
+    position: relative;
+    margin-top: 15px;
 
     width: 60%;
-    font-size: 16px;
-    font-family: 'Josefin Sans', sans-serif;
 
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    
+
+}
+#home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.greetings p u{
+    color: rgba(255, 66, 66, 0.891);
+    font-style: italic;
+    font-family: ;
 }
 @media only screen and (max-width:600px){
     .greetings p{
