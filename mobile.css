@@ -101,6 +101,10 @@
     }
     .content{
         background-color: #5c5c5d34;
+        clip-path: circle(0% at 50% 0);
+    }
+    .content.active{
+        clip-path: circle(150.0% at 50% 0);
     }
 
     body{
