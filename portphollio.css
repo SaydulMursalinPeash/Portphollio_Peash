@@ -19,19 +19,25 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(68, 246, 95, 0.49);
-    background-image: url("back7.jpg");
-    //background-image: linear-gradient(to right top, #80f12f, #6cdbeb);
+    background-size: cover;
+
+
+    background-image: url("back11.jpg");
+    
 }
 .container{
     height: 80vh;
-    width: 900px;
+    width: 850px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    box-shadow: 1px 0px 30px rgba(0, 0, 0, 0.51);
+    border-radius: 30px;
+    
 }
 .port-container{
+    
     height: 100%;
     width: 850px;
     overflow: hidden;
@@ -223,8 +229,8 @@ body{
 }
 .facebook,.twitter,.linkedin{
     position: relative;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -233,19 +239,19 @@ body{
     margin: 5px;
 }
 .facebook,.twitter,.linkedin i{
-    font-size: 17px;
+    font-size: 15px;
 }
 .facebook:hover i{
     color:#1a57f0;
-    font-size: 20px;
+    font-size: 18px;
 }
 .twitter:hover i{
     color:#1a8cf0;
-    font-size: 20px;
+    font-size: 18px;
 }
 .linkedin:hover i{
     color:#073ba4;
-    font-size: 20px;
+    font-size: 18px;
 }
 .social div:active{
     border-radius: 50%;
