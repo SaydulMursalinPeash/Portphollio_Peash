@@ -98,14 +98,14 @@
     display: flex;
     align-self: flex-end;
     width: 95%;
-    text-align: justify;
+
     justify-content: flex-start;
     border-radius: 15px;
-    //background: linear-gradient(to left,rgba(255, 255, 255, 0.251),transparent);
+    background: linear-gradient(to left,rgba(255, 255, 255, 0.251),transparent);
 }
 .project-detail p{
     color: antiquewhite;
-    border-left: 3px solid rgba(94, 94, 94, 0.53);
+    border-left: 5px solid rgba(230, 255, 8, 0.183);
     padding-left: 6px;
     
     font-size: 13px;
