@@ -75,6 +75,7 @@ body{
 }
 
 .me{
+
     position: relative;
     height: 100%;
     width: 100%;
@@ -226,8 +227,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+
+
 }
-.facebook,.twitter,.linkedin{
+.facebook,.twitter,.linkedin,.codeforces{
     position: relative;
     height: 30px;
     width: 30px;

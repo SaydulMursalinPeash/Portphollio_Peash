@@ -83,7 +83,7 @@
     
     font-family: 'Iceland', cursive;
     font-size: 20px;
-    color: rgba(198, 246, 253, 0.802);
+    color: rgba(0, 0, 0, 0.578);
 
 
 }
@@ -116,14 +116,18 @@
     align-items: flex-end;
     background: linear-gradient(to right,rgba(255, 255, 255, 0.238),transparent);
   }
-
+.project-box:hover{
+    background-color: rgba(97, 190, 236, 0.401);
+    transition: all 0.5s;
+    cursor: pointer;
+}
 
 
 
   .title p{
       font-size: 14px;
       font-family: 'Jost', sans-serif;
-      color: rgba(20, 22, 25, 0.891);
+      color: rgba(20, 22, 25, 0.734);
       padding: 0;
       font-weight: 600;
       
@@ -172,4 +176,17 @@
         color: rgba(113, 113, 113, 0.932);
         font-size: 13px;
     }
+    .project-box:hover{
+        background-color: rgba(175, 112, 241, 0.163);
+        transition: all 0.5s;
+    }
+    .project-box:hover .project-name{
+        background: linear-gradient(to right,rgba(201, 199, 199, 0.306),transparent);
+
+    }
+    .project-box:hover .project-detail{
+        background: linear-gradient(to left,rgba(201, 199, 199, 0.306),transparent);
+
+    }
+
 }
