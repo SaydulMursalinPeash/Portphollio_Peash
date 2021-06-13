@@ -162,6 +162,7 @@
         background: none;
     }
     .title p{
-        color: #fff;
+        color: rgba(113, 113, 113, 0.932);
+        font-size: 13px;
     }
 }
