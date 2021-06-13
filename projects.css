@@ -124,7 +124,7 @@
       width: 100%;
       padding-left: 20px;
       display: flex;
-      //background: linear-gradient(to right,rgba(118, 118, 118, 0.095),transparent);
+      
       border-radius: 5px 30px 5px 5px;
       align-items: center;
   }
@@ -157,7 +157,7 @@
         color: rgba(223, 217, 175, 0.7);
 
         
-        font-size: 18px;
+        font-size: 15px;
     }
     .project-name{
         background: linear-gradient(to right,rgba(69, 62, 62, 0.122),transparent);
