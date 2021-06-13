@@ -1,0 +1,47 @@
+#loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.381);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.load{
+    height: 50px;
+    width: 50px;
+    background-color: rgb(163, 171, 171);
+    animation: loader 1s infinite;
+}
+@keyframes loader{
+    0%{
+
+        transform: rotate(0deg);
+        clip-path: circle(50% at 50% 50%);
+        
+        
+    }
+    25%{
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        transform: rotate(90deg);
+    }
+
+    50%{
+
+        background-color: rgb(240, 66, 66);
+        transform: rotate(180deg);
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    }
+    75%{
+        transform: rotate(270deg);
+        clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    }
+    100%{
+        clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        background-color: rgb(240, 66, 66);
+        transform: rotate(360deg);
+    }
+
+}
