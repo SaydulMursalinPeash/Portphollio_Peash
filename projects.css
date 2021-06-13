@@ -40,6 +40,7 @@
     grid-template-columns: 150px auto;
     grid-auto-rows: 150px;
     grid-gap: 2px;
+    overflow: hidden;
 }
 
 .project-image{
@@ -66,9 +67,10 @@
 .project-name{
     position: relative;
     height: fit-content;
-    width: 100%;
+    width: fit-content;
     display: flex;
     border-radius: 15px;
+    margin-left: 5px;
     
     align-items: center;
     padding-left: 15px;
@@ -89,14 +91,28 @@
 }
 .project-detail{
     position: relative;
-    height: fit-content;
+    min-height: fit-content;
+    max-height: 100%;
     padding:15px;
+    overflow: hidden;
+    display: flex;
+    align-self: flex-end;
+    width: 95%;
+    text-align: justify;
+    justify-content: flex-start;
     border-radius: 15px;
-    background: linear-gradient(to left,rgba(255, 255, 255, 0.251),transparent);
+    //background: linear-gradient(to left,rgba(255, 255, 255, 0.251),transparent);
 }
 .project-detail p{
     color: antiquewhite;
+    border-left: 3px solid rgba(94, 94, 94, 0.53);
+    padding-left: 6px;
+    
     font-size: 13px;
+    position: relative;
+    height: 100%;
+    padding-right: 3px;
+    overflow-y: auto;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
