@@ -203,8 +203,6 @@ body{
     position: absolute;
     height: 100%;
     width: 100%;
-    
-    padding: 20px;
     clip-path: circle(0.4% at 50% 100%);
 
     border-radius: 5px 30px 30px 5px;
