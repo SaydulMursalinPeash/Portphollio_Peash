@@ -33,7 +33,7 @@
     box-sizing: border-box;
     width: 100%;
     margin-top: 5px;
-   background: linear-gradient(to left,rgba(0, 0, 0, 0.537),transparent);
+    background: linear-gradient(to left,rgba(0, 0, 0, 0.537),transparent);
     border-radius: 5px;
     padding: 5px;
     display: grid;
@@ -44,17 +44,21 @@
     overflow: hidden;
 }
 
+
 .project-image{
     position: relative;
     height: 100%;
+    width: 100%;
+    
+
     overflow: hidden;
     
 }
 
 .project-image img{
     position: relative;
-    height: 130px;
-    width: 130px;
+    height: 100%;
+    width: 100%;
     border-radius:5px;
 }
 .p-texts{
@@ -131,13 +135,11 @@
     right: 0;
     height: 10%;
     width: 100%;
-    padding-left: 10px;
     display: flex;
-    padding-bottom: 10px;
 
     border-radius: 5px 30px 5px 5px;
     align-items: flex-end;
-    background: linear-gradient(to right,rgba(255, 255, 255, 0.238),transparent);
+    
   }
 .project-box.active{
     background-color: rgba(0, 0, 0, 0.401);
@@ -155,14 +157,23 @@
     height: fit-content;
     transition: all 0.5s;
 }
+.project-box.active .project-image{
+    height: 150px;
+    width: 150px;
+}
 
 
   .title p{
       font-size: 14px;
       font-family: 'Jost', sans-serif;
-      color: rgba(20, 22, 25, 0.734);
+      color: rgba(66, 2, 41, 0.979);
       padding: 0;
       font-weight: 600;
+      clip-path: polygon(0% 0%, 85% 0, 100% 50%, 85% 100%, 0% 100%);
+      background:linear-gradient(to left,rgba(0, 0, 0, 0.455),transparent);
+      padding: 5px 25px 5px 15px;
+
+      border-radius: 15px;
       
   }
 
@@ -177,6 +188,10 @@
     }
     .name h2{
         letter-spacing: 2px;
+    }
+    .project-box.active .project-image{
+        height: 130px;
+        width: 130px;
     }
     
 }
@@ -204,9 +219,10 @@
     }
     .title{
         background: none;
+        
     }
     .title p{
-        color: rgba(113, 113, 113, 0.932);
+        color: rgba(250, 60, 177, 0.979);
         font-size: 13px;
     }
     .project-box:hover{

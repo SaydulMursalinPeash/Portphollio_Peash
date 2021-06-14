@@ -1,5 +1,6 @@
 <html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="portphollio.css">
         <link rel="stylesheet" href="home.css">
@@ -38,10 +39,10 @@
 
                 <div class="main">
                     <div class="buttons">
-                        <div class="button"><span></span><p>Home</p></div>
-                        <div class="button"><span></span><p>Projects</p></div>
-                        <div class="button"><span></span><p>About</p></div>
-                        <div class="button"><span></span><p>Blogs</p></div>
+                        <div class="button" id="home-btn"><span></span><p>Home</p></div>
+                        <div class="button" id="projects-btn"><span></span><p>Projects</p></div>
+                        <div class="button" id="about-btn"><span></span><p>About</p></div>
+                        <div class="button" id="achivements-btn"><span></span><p>Achivements</p></div>
 
                     </div>
 
@@ -73,7 +74,7 @@
                                 </p>
                             </div>
                             <div class="project-container">
-                                <div class="project-box">
+                                <div class="project-box" id="project1">
                                     <div class="project-image"><img src="project/fuldani.jpg"></div>
                                     <div class="p-texts">
                                         <div class="project-name">
@@ -89,7 +90,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="project-box">
+                                <div class="project-box" id="project2">
                                     <div class="project-image"><img src="project/coc.jpg"></div>
                                     <div class="p-texts">
                                         <div class="project-name"><p>Cocacola bottle cp</p></div>
@@ -99,11 +100,11 @@
                                         </p></div>
                                     </div>
                                 </div>
-                                <div class="project-box">
+                                <div class="project-box" id="project3">
                                     <div class="project-image">
                                         <img src="project/rover.jpg">
                                     </div>
-                                    <div class="p-texts">
+                                    <div class="p-texts" >
                                         <div class="project-name"><p>Rover wheel</p></div>
                                         <div class="project-detail"><p>Made with solidworks.
                                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat, ea vero soluta voluptatem aliquid fugiat aperiam enim illum id corporis? Eius, vero. Eaque corporis quo nostrum, sapiente quam dignissimos tempore.
@@ -111,7 +112,7 @@
                                         </p></div>
                                     </div>
                                 </div>
-                                <div class="project-box">
+                                <div class="project-box" id="project4">
                                     <div class="project-image"><img src="project/propeller.jpg"></div>
                                     <div class="p-texts">
                                         <div class="project-name"><p>Propeller</p></div>
@@ -121,7 +122,7 @@
                                         </p></div>
                                     </div>
                                 </div>
-                                <div class="project-box">
+                                <div class="project-box" id="project5">
                                     <div class="project-image"><img src="project/fruit.jpg"></div>
                                     <div class="p-texts">
                                         <div class="project-name"><p>Foldani</p></div>

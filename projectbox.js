@@ -11,3 +11,23 @@
         });
     });
 }
+{
+    $(document).ready(function(){
+            $("#project1").hide();
+            $("#project2").hide();
+            $("#project3").hide();
+            $("#project4").hide();
+            $("#project5").hide();
+        $("#projects-btn").click(function(){
+            $(this).ready(function(){
+            $("#project1").show(500);
+            $("#project2").show(1000);
+            $("#project3").show(1500);
+            $("#project4").show(2000);
+            $("#project5").show(2500);
+            })
+            
+
+        });
+    });
+}
