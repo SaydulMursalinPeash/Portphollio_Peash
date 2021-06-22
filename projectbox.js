@@ -13,21 +13,15 @@
 }
 {
     $(document).ready(function(){
-            $("#project1").hide();
-            $("#project2").hide();
-            $("#project3").hide();
-            $("#project4").hide();
-            $("#project5").hide();
-        $("#projects-btn").click(function(){
-            $(this).ready(function(){
-            $("#project1").show(500);
-            $("#project2").show(1000);
-            $("#project3").show(1500);
-            $("#project4").show(2000);
-            $("#project5").show(2500);
-            })
+            $(".project-box").css("left","100%");
+            $("#projects-btn").click(function(){
+                $("#project1").animate({left:"0px"},400);
+                $("#project2").animate({left:"0px"},700);
+                $("#project3").animate({left:"0px"},900);
+                $("#project4").animate({left:"0px"},1000);
+                $("#project5").animate({left:"0px"},1080);
+            });
             
 
         });
-    });
 }
