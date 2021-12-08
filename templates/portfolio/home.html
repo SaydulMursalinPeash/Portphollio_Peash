@@ -1,0 +1,148 @@
+{% load static %}
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'css/portphollio.css' %}">
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">
+        <link rel="stylesheet" href="{% static 'css/mobile.css' %}">
+        <link rel="stylesheet" href="{% static 'css/projects.css' %}">
+        <link rel="stylesheet" href="{% static 'css/scroll.css' %}">
+        <link rel="stylesheet" href="{% static 'css/loader.css' %}">
+        <script src="https://kit.fontawesome.com/c0c844b1b2.js" crossorigin="anonymous"></script>
+        <style>
+            body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+
+
+    background-image: url("{{ background }}");
+    
+}
+        </style>
+    </head>
+    <body onload="loader()">
+        
+
+        <div class="container">
+
+            <div class="port-container">
+               
+                
+                <div class="side-bar">
+                    <div class="me">
+                        <div class="photo">
+                            <span class="photoback"></span>
+                            <img class="myphoto" src="{{ myphoto }}">
+                        </div>
+                        <div class="name"><h2>Saydul Peash</h2></div>
+                    </div>
+                    
+                    <div class="social">
+                        <div class="facebook"><i class="fab fa-facebook-f"></i></div>
+                        <div class="twitter"><i class="fab fa-twitter"></i></div>
+                        <div class="linkedin"><i class="fab fa-linkedin-in"></i></div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="main">
+                    <div class="buttons">
+                        <div class="button" id="home-btn"><span></span><p>Home</p></div>
+                        <div class="button" id="projects-btn"><span></span><p>Projects</p></div>
+                        <div class="button" id="about-btn"><span></span><p>About</p></div>
+                        <div class="button" id="achivements-btn"><span></span><p>Achivements</p></div>
+
+                    </div>
+
+
+
+                    <div class="contents">
+                        <div id="home" class="content">
+                            <div class="greetings">
+                                <h1>
+                                    Hello!
+                                </h1>
+                                <p class="det">
+                                    i am <u>Peash.</u>
+
+                                </p>
+                                <p class="d">Student, Developer, Programmer.</p>
+                                
+                        </div>
+
+                        </div>
+
+
+
+
+                        <div id="projects" class="content" >
+                            <div class="title">
+                                <p>
+                                    Projects i have done:
+                                </p>
+                            </div>
+                            <div class="project-container">
+                                
+                                {% for project in projects %}
+                                <div class="project-box" id="project1">
+                                    <div class="project-image"><img src="{{ project.image }}"><a href="{{project.image}}" style="position: absolute;z-index: 10;height: 100%;width: 100%;"></a></div>
+                                    <div class="p-texts">
+                                        <div class="project-name">
+                                            <p>{{ project.project_name }}</p>
+                                        </div>
+                                        <div class="project-detail">
+                                            <p>
+                                                {{ project.details }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                            
+                            
+                        </div>
+
+                        
+                        <div class="content" id="about">
+
+
+
+                        </div>
+                        <div class="content" id="about"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="loader">
+            <span class="load"></span>
+        </div>
+
+
+        <script src="{% static 'js/portphollio.js' %}"></script>
+        <script src="{% static 'js/loader.js' %}"></script>
+        <script src="{% static 'js/projectbox.js' %}"></script>
+        <script>
+            {
+    $(document).ready(function(){
+            $(".project-box").css("left","100%");
+            $("#projects-btn").click(function(){
+                $(".project-box").animate({left:"0px"},400);
+                
+            });
+            
+
+        });
+}
+        </script>
+    </body>
+</html>
