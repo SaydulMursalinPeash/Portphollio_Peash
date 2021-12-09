@@ -76,10 +76,23 @@ WSGI_APPLICATION = 'peash.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'd8j6a38btlnbc',
+
+        'USER': 'aitwgjumhmzrcy',
+
+        'PASSWORD': '5b096e0b445fb39cd3c2bd892299ae1ac6e3b20a7d5d2d4fc624c637a5e7f244',
+
+        'HOST': 'ec2-23-21-25-48.compute-1.amazonaws.com',
+
+        'PORT': '5432',
+
     }
+
 }
 
 
